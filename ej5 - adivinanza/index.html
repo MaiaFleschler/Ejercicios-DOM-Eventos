@@ -12,31 +12,9 @@
     <button id="botonIncorrecto1">Europa</button>
     <button id="botonIncorrecto2">Africa</button>
     <h2 id="respuesta"></h2>
-    <script>
-        const botonCorrecto = document.getElementById("botonCorrecto");
-        const botonIncorrecto1 = document.getElementById("botonIncorrecto1");
-        const botonIncorrecto2 = document.getElementById("botonIncorrecto2");
-        const respuesta = document.getElementById("respuesta");
+    
+    <SCript src="/ej5 - adivinanza/app.js"></SCript>
 
-        botonCorrecto.addEventListener("click", ()=>{
-            respuesta.textContent = "¡Correcto!";
-            botonCorrecto.style = "background-color:green; color:white;"
-        })
-
-        botonIncorrecto1.addEventListener("click", ()=>{
-            respuesta.textContent = "¡Le erraste!";
-            botonIncorrecto1.style = "background-color:red; color:white;"
-            botonIncorrecto2.style = "background-color:red; color:white;"
-            botonCorrecto.style = "background-color:green; color:white;"
-        })
-        botonIncorrecto2.addEventListener("click", ()=>{
-            respuesta.textContent = "¡Le erraste!";
-            botonIncorrecto1.style = "background-color:red; color:white;"
-            botonIncorrecto2.style = "background-color:red; color:white;"
-            botonCorrecto.style = "background-color:green; color:white;"
-        })
-
-    </script>
     <!-- adivinanza -->
     <!-- Crear un documento html con una adivinanza (o una pregunta) y 3 botones con posibles respuestas. Si se 
         clickea la respuesta correcta, se debe mostrar en el documento un texto que lo indique (por ejemplo: ¡Correcto!) 
