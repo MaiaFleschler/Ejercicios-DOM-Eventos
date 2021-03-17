@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rojo{
+            background-color: red;
+            color: white;
+        }
+        .amarillo{
+            background-color: yellow;
+            color: white;
+        }
+        .verde{
+            background-color: green;
+            color: white;
+        }
+        .azul{
+            background-color: blue;
+            color: white;
+        }
+        .rosa{
+            background-color: pink;
+            color: white;
+        }
+        .naranja{
+            background-color: orange;
+            color: white;
+        }
+        #cuadrado{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <button class="rojo">Rojo</button>
+    <button class="amarillo">Amarillo</button>
+    <button class="verde">Verde</button>
+    <button class="azul">Azul</button>
+    <button class="rosa">Rosa</button>
+    <button class="naranja">Naranja</button>
+    <br>
+    <br>
+    <div id="cuadrado"></div>
+    <script>
+        const rojo = document.querySelector(".rojo");
+        const amarillo = document.querySelector(".amarillo");
+        const verde = document.querySelector(".verde");
+        const azul = document.querySelector(".azul");
+        const rosa = document.querySelector(".rosa");
+        const naranja = document.querySelector(".naranja");
+        const cuadrado = document.querySelector("#cuadrado");
+
+        rojo.addEventListener("click", () => {
+            cuadrado.className = "rojo";
+        })
+        amarillo.addEventListener("click", () => {
+            cuadrado.className = "amarillo";
+        })
+        verde.addEventListener("click", () => {
+            cuadrado.className = "verde";
+        })
+        azul.addEventListener("click", () => {
+            cuadrado.className = "azul";
+        })
+        rosa.addEventListener("click", () => {
+            cuadrado.className = "rosa";
+        })
+        naranja.addEventListener("click", () => {
+            cuadrado.className = "naranja";
+        })
+    </script>
+    <!-- paleta 
+        Crear un documento html que tenga 6 botones con un color de fondo distinto, y un div cuadrado grande. 
+        Cuando se clickea un botón, el div debe cambiar su color de fondo al mismo color de fondo que el del botón 
+        clickeado. -->
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 150px;
+            width: auto;
+        }
+        .imgGrande{
+            height: 500px;
+            width: auto;
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://www.ecured.cu/images/thumb/7/71/Homer-simpson_%282%29.jpg/260px-Homer-simpson_%282%29.jpg" alt="" class="img1">
+    <img src="https://superheroinas.review/wp-content/uploads/2020/02/6665945-marge.png" alt="" class="img2">
+    <img src="https://3.bp.blogspot.com/-Fnjw4oj0uFE/UPKwHiavakI/AAAAAAAABzs/urI-AXgZKuA/s1600/Bart+copia.jpg" alt="" class="img3">
+    <img src="https://superheroinas.review/wp-content/uploads/2020/02/6665938-lisa.png" alt="" class="img4">
+    <img src="https://superheroinas.review/wp-content/uploads/2020/02/6665941-maggie.png" alt="" class="img5">
+    <img src="https://m.media-amazon.com/images/M/MV5BYjFkMTlkYWUtZWFhNy00M2FmLThiOTYtYTRiYjVlZWYxNmJkXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg" alt="" class="imgGrande">
+    
+    <script>
+        const img1 = document.querySelector(".img1");
+        const img2 = document.querySelector(".img2");
+        const img3 = document.querySelector(".img3");
+        const img4 = document.querySelector(".img4");
+        const img5 = document.querySelector(".img5");
+        const imgGrande = document.querySelector(".imgGrande");
+
+        const actualizarImg = (img)=>{
+            imgGrande.src = img.src;
+        }
+        img1.addEventListener("mouseover", ()=>{
+            actualizarImg(img1);
+        });
+        img2.addEventListener("mouseover", ()=>{
+            actualizarImg(img2);
+        });
+        img3.addEventListener("mouseover", ()=>{
+            actualizarImg(img3);
+        });
+        img4.addEventListener("mouseover", ()=>{
+            actualizarImg(img4);
+        });
+        img5.addEventListener("mouseover", ()=>{
+            actualizarImg(img5);
+        });
+
+    </script>
+    <!-- imagenes-2
+Repetir el ejercicio anterior, pero en vez de cambiar la imagen grande cuando se clickean las imágenes chicas,
+ hacerlo cuando se pasa el mouse por encima de las imágenes chicas..-->
+</body>
+</html>
