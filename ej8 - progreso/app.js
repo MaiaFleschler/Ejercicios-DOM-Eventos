@@ -9,11 +9,11 @@ let ancho = 0;
 const incrementar = () =>{
     if(ancho<100){
     ancho = ancho + 10;
-    if(ancho>0 && ancho<=100){
     barra.style = `width:${ancho}%;` 
     texto.textContent = `${ancho}%`
+    } else{
+        ancho=100;
     }
-}
 }
 
 incrementa.addEventListener("click", incrementar);
@@ -30,12 +30,13 @@ body.addEventListener("keydown", incrementarKey);
 const disminuir = () =>{
     if(ancho>0){
     ancho = ancho - 10;
-    if(ancho>-10 && ancho<=100){
     barra.style = `width:${ancho}%;` 
     texto.textContent = `${ancho}%`
-    } 
+    } else{
+       ancho=0; 
+    }
 }
-}
+
 
 disminuye.addEventListener("click", disminuir);
 
